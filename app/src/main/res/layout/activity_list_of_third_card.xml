@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListofThirdCard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/mainbg"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++ Classes"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:layout_marginLeft="45dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/oop"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="C++ OOP"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/pressed_listview2"
+            android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/classes_objects"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="C++ Classes/Object"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview2"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/class_methods"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="C++ Class Methods"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview2"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/constructors"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="C++ Constructors"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview2"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/access_specifiers"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="C++ Access Specifiers"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview2"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/encapsulation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="C++ Encapsulation"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview2"
+                android:textSize="23dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/con_inheritance">
+
+                <TextView
+                    android:id="@+id/inheritance1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:text="C++ Inheritance"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/pressed_listview2"
+                    android:textSize="23dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#fafcff"
+                    android:id="@+id/inheritance_subtopic">
+
+                    <TextView
+                        android:id="@+id/inheritance"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="Inheritance"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/multilevel_inheritance"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Multilevel Inheritance"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/multiple_inheritance"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Multiple Inheritance"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/inheritance_access_specifiers"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Access Specifiers"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/polymorphism"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="C++ Polymorphism"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview2"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/files"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="C++ Files"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview2"
+                android:textSize="23dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

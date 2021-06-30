@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListofFourthCard">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/mainbg"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++ How to..."
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:layout_marginLeft="45dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/print_hello_world"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Print Hello World"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/pressed_listview3"
+            android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/print_full_pyramid"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Print Full Pyramid Using Asterisk"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview3"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/print_square_pattern"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Print Square Pattern Using Asterisk"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview3"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/reverse_given_num"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Reverse the Given Input Number"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview3"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/sum_of_digit"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Get the Sum of the Given Digits Program"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview3"
+                android:textSize="21dp"/>
+
+            <TextView
+                android:id="@+id/convert_meter"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Convert Feet to Meter"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview3"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/odd_even"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Check whether an Integer is an Odd or Even"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview3"
+                android:textSize="19dp"/>
+
+            <TextView
+                android:id="@+id/leap_year"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Check if Leap Year or Not"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview3"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/program_increment"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Print Increment Number"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview3"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/print_multiplication_table"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Print Multiplication Table"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview3"
+                android:textSize="23dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

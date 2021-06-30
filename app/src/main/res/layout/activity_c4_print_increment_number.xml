@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".C4PrintIncrementNumber">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/mainbg"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++ How to..."
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:layout_marginLeft="45dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Print Increment Number"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#fc0303"
+                    android:textSize="24sp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="6dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Program Code"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#1d70cf"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:id="@+id/program_increment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Program"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/run_to_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Copy the code and Run on your compiler>>"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:background="#20a142"/>
+
+            <TextView
+                android:id="@+id/output"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sample Result"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#fc0303"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"/>
+
+
+            <ImageView
+                android:layout_width="370dp"
+                android:layout_height="360dp"
+                android:layout_gravity="center"
+                android:background="@drawable/increment"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

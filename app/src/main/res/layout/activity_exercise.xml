@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExerciseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/mainbg"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++ Exercise"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:layout_marginLeft="45dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/exercise"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Learn by answering the questions:"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="#fc0303"
+            android:textSize="23sp"
+            android:padding="8dp"
+            android:layout_marginLeft="6dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/exercise_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Exercise"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="8dp"
+        android:textIsSelectable="true"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

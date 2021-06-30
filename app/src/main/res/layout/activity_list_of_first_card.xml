@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListofFirstCard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/mainbg"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++ Tutorial"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:layout_marginLeft="45dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="C++ Intro"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/syntax"
+                android:layout_below="@+id/intro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="C++ Syntax"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview"
+                android:textSize="23dp"/>
+
+            <LinearLayout
+                android:layout_below="@+id/syntax"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/con_output">
+
+                <TextView
+                    android:id="@+id/output"
+                    android:layout_below="@+id/syntax"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="C++ Output"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/pressed_listview"
+                    android:textSize="23dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#fafcff"
+                    android:id="@+id/output_subtopic">
+
+                <TextView
+                    android:id="@+id/print_text"
+                    android:layout_below="@+id/output"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Print Text"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/new_lines"
+                        android:layout_below="@+id/output"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="New Lines"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="C++ Comments"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview"
+                android:textSize="23dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/con_variable">
+
+                <TextView
+                    android:id="@+id/variables"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:text="C++ Variables"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/pressed_listview"
+                    android:textSize="23dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#fafcff"
+                    android:id="@+id/var_subtopic">
+
+                    <TextView
+                        android:id="@+id/declare_var"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="Declare Variables"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/declare_multivar"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Declare Multiple Variables"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/identifiers"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Identifiers"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/constants"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Constants"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_input"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="C++ User Input"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview"
+                android:textSize="23dp"/>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/con_data_types">
+
+                <TextView
+                    android:id="@+id/data_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:text="C++ Data Types"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/pressed_listview"
+                    android:textSize="23dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#fafcff"
+                    android:id="@+id/data_types_subtopic">
+
+                    <TextView
+                        android:id="@+id/basic_data_types"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="Basic Data Types"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/numbers"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Numbers"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/booleans"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Booleans"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/characters"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Characters"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/strings"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Strings"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+                </LinearLayout>
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/con_operator">
+
+                <TextView
+                    android:id="@+id/operators"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:text="C++ Operators"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/pressed_listview"
+                    android:textSize="23dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#fafcff"
+                    android:id="@+id/operator_subtopic">
+
+                    <TextView
+                        android:id="@+id/arithmetic"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="Arithmetic"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/assignment"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Assignment"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/comparison"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Comparison"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/logical"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Logical"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/con_string">
+
+                <TextView
+                    android:id="@+id/string"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:text="C++ Strings"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/pressed_listview"
+                    android:textSize="23dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#fafcff"
+                    android:id="@+id/string_subtopic">
+
+                    <TextView
+                        android:id="@+id/concatenation"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="Concatenation"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/num_strings"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Number and Strings"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/string_length"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="String Length"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/access_string"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Access Strings"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/con_boolean">
+
+                <TextView
+                    android:id="@+id/booleanss"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:text="C++ Booleans"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/pressed_listview"
+                    android:textSize="23dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#fafcff"
+                    android:id="@+id/boolean_subtopic">
+
+                    <TextView
+                        android:id="@+id/boolean_values"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="Boolean Values"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/boolean_express"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Boolean Expressions"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/con_conditions">
+
+                <TextView
+                    android:id="@+id/conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:text="C++ Conditions"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/pressed_listview"
+                    android:textSize="23dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#fafcff"
+                    android:id="@+id/conditions_subtopic">
+
+                    <TextView
+                        android:id="@+id/if_condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="if"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/else_condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="else"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/else_if"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="else if"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/short_if_else"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Short hand if..else"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/switch_condi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="C++ Switch"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview"
+                android:textSize="23dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/con_while_loop">
+
+                <TextView
+                    android:id="@+id/while_loop_condi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:text="C++ While Loop"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/pressed_listview"
+                    android:textSize="23dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#fafcff"
+                    android:id="@+id/while_loop_subtopic">
+
+                    <TextView
+                        android:id="@+id/while_loop"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="While Loop"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/do_while_loop"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Do/While Loop"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:textSize="23dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/for_loop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="C++ For Loop"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/break_continue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="C++ Break and Continue"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/arrays"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="C++ Arrays"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/references"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="C++ References"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview"
+                android:textSize="23dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="#fafcff"
+                android:id="@+id/references_subtopic">
+
+                <TextView
+                    android:id="@+id/create_references"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Create References"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:textSize="23dp"/>
+
+                <TextView
+                    android:id="@+id/memory_address"
+                    android:layout_below="@+id/output"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Memory Address"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:textSize="23dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pointers"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="C++ Pointers"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/pressed_listview"
+                android:textSize="23dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

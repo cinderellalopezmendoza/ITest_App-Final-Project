@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".C3OopContent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/mainbg"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++ Classes"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:layout_marginLeft="45dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/oop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="C++ OOP"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#fc0303"
+                    android:textSize="23sp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="6dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/oop_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="What is OOP?"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C++ What are Classes and Objects?"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#fc0303"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/class_object_"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Class and Object"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textIsSelectable="true"/>
+
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="280dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fruit"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Another example:"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textIsSelectable="true"/>
+
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="280dp"
+                android:layout_gravity="center"
+                android:background="@drawable/animal"/>
+
+            <TextView
+                android:id="@+id/explain_classobject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Classes and objects Explain"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textIsSelectable="true"/>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

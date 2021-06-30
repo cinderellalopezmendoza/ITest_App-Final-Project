@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.itestapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ITestApp">
+        <activity android:name=".ExerciseActivity"></activity>
+        <activity android:name=".C4MultiplicationTable" />
+        <activity android:name=".C4PrintIncrementNumber" />
+        <activity android:name=".C4LeapYearOrNot" />
+        <activity android:name=".C4IntegerOddorEven" />
+        <activity android:name=".C4ConvertFeetToMeter" />
+        <activity android:name=".C4SumofGivenDigitProgram" />
+        <activity android:name=".C4ReverseGivenNumber" />
+        <activity android:name=".C4PrintSquarePattern" />
+        <activity android:name=".C4PrintFullPyramid" />
+        <activity android:name=".C4PrintHelloWorld" />
+        <activity android:name=".ListofFourthCard" />
+        <activity android:name=".C3Files" />
+        <activity android:name=".C3Polymorphism" />
+        <activity android:name=".C3Specifiers" />
+        <activity android:name=".C3MultipleInheritance" />
+        <activity android:name=".C3MultilevelInheritance" />
+        <activity android:name=".C3Inheritance" />
+        <activity android:name=".C3Encapsulation" />
+        <activity android:name=".C3AccessSpecifiers" />
+        <activity android:name=".C3Constructors" />
+        <activity android:name=".C3ClassMethods" />
+        <activity android:name=".C3ClassesObject" />
+        <activity android:name=".C3OopContent" />
+        <activity android:name=".ListofThirdCard" />
+        <activity android:name=".C2FunctionOverloading" />
+        <activity android:name=".C2PassByReference" />
+        <activity android:name=".C2ReturnValues" />
+        <activity android:name=".C2MultipleParameters" />
+        <activity android:name=".C2DefaultParameters" />
+        <activity android:name=".C2Parameters_Arguments" />
+        <activity android:name=".C2Functions" />
+        <activity android:name=".ListofSecondCard" />
+        <activity android:name=".C1Pointers" />
+        <activity android:name=".C1MemoryAddress" />
+        <activity android:name=".C1CreateReferences" />
+        <activity android:name=".C1Arrays" />
+        <activity android:name=".C1BreakContinue" />
+        <activity android:name=".C1ForLoop" />
+        <activity android:name=".C1DoWhileLoop" />
+        <activity android:name=".C1WhileLoop" />
+        <activity android:name=".C1SwitchContent" />
+        <activity android:name=".C1ConditionsShortIfElse" />
+        <activity android:name=".C1ConditionsElseIf" />
+        <activity android:name=".C1ConditionIf" />
+        <activity android:name=".C1ConditionElse" />
+        <activity android:name=".C1BoolExpressions" />
+        <activity android:name=".C1BoolValues" />
+        <activity android:name=".C1StringAccess" />
+        <activity android:name=".C1StringLength" />
+        <activity android:name=".C1StringNumbers" />
+        <activity android:name=".C1StringConcatenation" />
+        <activity android:name=".C1OpLogical" />
+        <activity android:name=".C1OpComparison" />
+        <activity android:name=".C1OpAssignment" />
+        <activity android:name=".C1OpArithmetic" />
+        <activity android:name=".C1DataStrings" />
+        <activity android:name=".C1DataCharacters" />
+        <activity android:name=".C1DataBooleans" />
+        <activity android:name=".C1DataNumbers" />
+        <activity android:name=".C1BasicDataTypes" />
+        <activity android:name=".C1UserInput" />
+        <activity android:name=".C1VarConstants" />
+        <activity android:name=".C1VarIdentifiers" />
+        <activity android:name=".C1VarDeclareMultivar" />
+        <activity android:name=".C1VarDeclareVar" />
+        <activity android:name=".C1CommentsContent" />
+        <activity android:name=".C1OutputNewLines" />
+        <activity android:name=".C1OutputPrintText" />
+        <activity android:name=".C1SyntaxContent" />
+        <activity android:name=".C1IntroContent" />
+        <activity android:name=".ListofFirstCard" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
